@@ -1,0 +1,16 @@
+*{
+    font-family: sans-serif;
+}
+
+header {
+    border: 3px solid mediumaquamarine;
+    background-color: mediumaquamarine;
+    padding-left: 4%;
+}
+h1 {
+    font-size: 2.5rem;
+   
+}
+nav {
+    background-color: rgb(24, 24, 24);
+}
