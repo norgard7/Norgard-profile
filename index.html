@@ -10,91 +10,106 @@
 <body>
     <header>
         <h1>Lauren C. Norgard</h1>
+    
+        <nav>
+            <ul>
+                <li><a href="#aboutme">About Me</a></li>
+                <li><a href="#work">Work</a></li>
+                <li><a href="#contactme">Contact Me</a></li>
+                <li><a href="#">Resume</a></li>
+               
+            </ul>
+        </nav>
     </header>
-    <nav>
-        <ul>
-            <li a href="#aboutMe">About Me</li>
-            <li a href="#work">Work</li>
-            <li a href="#contactMe">Contact Me</li>
-            <li a href="#resume">Resume</li>
-        </ul>
-    </nav>
     <section class="container">
         <figure>
-            <img src="#">
-            <article>
-                <h2>Cool Subtitle Here!</h2>
-            </article>
+            <img class="header-image" src="images/leaves.jpg">
+            <h2>Cool Subtitle Here!</h2>
         </figure>
     </section>
     <main>
-        <section class="about-box" id="aboutme">
-            <article>
-                <h3>About Me</h3>
-            </article>
-            <section>
-                <p>I'm not sure what to say about myself yet. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus libero cum odio recusandae facere! Facilis explicabo quasi aut aliquid nulla ipsam ducimus minus nobis? Id, necessitatibus. Fuga dolorum exercitationem culpa.</p>
+        <section class="about-box section-box" id="aboutme">
+            <div class="section-header">
+                <h3>About<br> Me</h3>
+            </div>
+            <section class="paragraph main-content">
+                <p>I'm not sure what to say about myself yet. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus libero cum odio recusandae facere! Facilis explicabo quasi aut aliquid nulla ipsam ducimus minus nobis? Id, necessitatibus. Fuga dolorum exercitationem culpa.</p> 
+                <br>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium atque at rerum id culpa dolorem? Ipsam molestiae nostrum, iste nesciunt nemo ad laboriosam eaque perferendis voluptatum doloremque nam nulla velit.</p>
             </section>
         </section>
-        <section class="work-box" id="Work">
-            <article>
+        <section class="work-box section-box" id="work">
+            <div class="section-header">
                 <h3>Work</h3>
-            </article>
-            <section class="surf-report">
+            </div>
+        <section class="all-image-container main-content">
+            <section class="surf-report small-image-container image-box">
                 <figure>
-                    <img src="#" alt="">
+                    <a href="http://www.google.com" target="_blank"><img class="surf-image" src="images/ocean.jpg" alt="sea turtle swimming in ocean"></a>
                 </figure>
-                <section>
-                    <h4>Surf Report</h4>
+                <section class="content-container">
+                    <h4 class="box-title">Surf Report</h4>
                     <p>Mern Stack</p>
                 </section>
             </section>
-            <section class="LED-Wall">
+            <section class="small-image-container">
+            <section class="LED-Wall image-box">
                 <figure>
-                    <img src="#" alt="">
+                    <a href="http://www.google.com" target="_blank"><img class="sml-image" src="images/lights.jpg" alt="blurred lights"></a>
                 </figure>
-                <section>
-                    <h4>LED Wall</h4>
+                <section class="content-container" >
+                <section >
+                    <h4 class="box-title">LED Wall</h4>
                     <p>Node/Iot</p>
                 </section>
-            </section>
-            <section class="calculator">
+                </section>
+                </section>
+            <section class="calculator image-box">
                 <figure>
-                    <img src="#" alt="">
+                    <a href="http://www.google.com" target="_blank"><img class="sml-image" src="images/calculator.jpg" alt="coding"></a>
                 </figure>
-                <section>
-                    <h4>Calculator</h4>
+                <section class="content-container">
+                    <h4 class="box-title">Calculator</h4>
                     <p>React/Javascript/CSS</p>
                 </section>
             </section>
-            <section class="pastel-puzzles">
+        </section>
+        <section class="small-image-container">
+            <section class="pastel-puzzles image-box">
                 <figure>
-                    <img src="#" alt="">
+                    <a href="http://www.google.com" target="_blank"><img class="sml-image" src="images/puzzle.jpg" alt="white puzzle with one pink piece"></a>
                 </figure>
-                <section>
-                    <h4>Pastel Puzzles</h4>
+                <section class="content-container">
+                    <h4 class="box-title">Pastel Puzzles</h4>
                     <p>Mern Stack</p>
                 </section>
             </section>
-            <section class="run-buddy">
+            <section class="run-buddy image-box">
                 <figure>
-                    <img src="#" alt="">
+                    <a href="http://www.google.com" target="_blank"><img class="sml-image" src="images/running.jpg" alt="dog running outside"></a>
                 </figure>
-                <section>
-                    <h4>Run Buddy</h4>
+                <section class="content-container">
+                    <h4 class="box-title">Run Buddy</h4>
                     <p>HTML/CSS</p>
                 </section>
             </section>
+        </section>
+        </section>
         </section>   
     </main>
-    <footer>
-        <h5 id="contactMe">Contact Me</h5>
-        <h6>651.808.3785</h6>
-        <h6>lauren.c.norgard@gmail.com</h6>
-        <h6 a href="#">GitHub</h6>
-        <h6 a href="#">Twitter</h6>
-        <h6 a href="#">Spotify</h6>
-
+    <footer class="contact-box section-box">
+        <div class="section-header">
+            <h5 id="contactme">Contact<br> Me</h5>
+        </div>
+        <section class="footer-container main-content">
+        <ul>
+            <li><a href="#">651.808.3785</a></li>
+            <li><a href="mailto:Lauren.c.norgard@gmail.com">Email Me</a></li>
+            <li><a href="https://github.com/norgard7">GitHub</a></li>
+            <li><a href="http://twitter.com/">Twitter</a></li>
+            <li><a href="https://www.linkedin.com/in/lauren-norgard-2458ba200/">LinkedIn</a></li>
+        </ul>
+    </section>
     </footer>
     
 </body>

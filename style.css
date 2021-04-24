@@ -1,16 +1,207 @@
-*{
+* {
     font-family: sans-serif;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+/* sets 1rem equal to 10px */
+html {
+    font-size: 62.5%;
 }
 
 header {
-    border: 3px solid mediumaquamarine;
-    background-color: mediumaquamarine;
-    padding-left: 4%;
-}
-h1 {
-    font-size: 2.5rem;
+    background-color: rgb(83, 81, 81);
+    padding: 1rem;
+    position: relative;
+    z-index: 10;
    
 }
-nav {
-    background-color: rgb(24, 24, 24);
+h1 {
+    font-size: 3rem;
+    background-color: #B0CDB6;
+    padding-left: 4%;
+    width: 30%;
+    position: relative;
+    bottom: 10px;
+    right: 10px;
+    padding: 10px;
+    text-align: right;
+  
+   
 }
+h2 {
+    background-color: #B0CDB6;
+    position:absolute;
+    bottom: 15px;
+    right: 30px;
+    padding: 10px;
+    font-size: 2.5rem;
+}
+
+.paragraph {
+    width: 70%;
+    font-size: 2.0rem;
+    margin-top: 15px;
+    margin-left: 2rem;
+  
+  
+}
+
+header nav {
+    display: inline-block;
+    position: absolute;
+    top: 1rem;
+    right: 30px;
+   
+    
+    
+}
+nav ul li {
+    color:#B0CDB6;
+    margin-left: 25px;
+    border-bottom: solid 5px #B0CDB6;
+    
+    
+}
+ul li {
+  list-style-type: none;
+  display: inline-block; 
+  padding: 5px; 
+}
+nav ul li a {
+    color: #B0CDB6;
+}
+a {
+    text-decoration: none;
+    font-size: 1.7rem;
+    
+}
+
+.header-image {
+    width: 100%;
+    height: 5%;
+}
+.surf-image {
+    height: 40rem;
+    width: 100%;
+    border:#B0CDB6 solid 5px;
+    
+}
+.sml-image {
+    height: 28rem;
+    border:#B0CDB6 solid 5px;
+}
+
+
+.container {
+    position: relative;
+    display: flexbox;
+}
+.content-container {
+    background-color: #B0CDB6;
+    display:inline-block;
+    position:absolute;
+    bottom: 2rem;
+    left: 0;
+    padding: 1rem;
+}
+
+.all-image-container {
+    
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    margin-left: 2rem;
+    
+    
+}
+.small-image-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    position: relative;
+    margin-bottom: 2rem;
+}
+.image-box {
+    position: relative;
+}
+.image-box {
+    opacity: 0.5;
+  }
+  
+.image-box:hover {
+    opacity: 1.0;
+    cursor: pointer;
+  }
+
+/* consider refractoring this duplicating code */
+.section-header{
+    width: 25%;
+    border-right: .5rem solid rgb(83, 81, 81);
+    font-size: 4rem;
+    color: rgb(83, 81, 81);
+    text-align: right;
+    padding-right: 1rem;
+}
+.footer-container ul li {
+    color:rgb(83, 81, 81);
+    list-style-type: none;
+    display: inline-block;
+    margin-left: 25px;
+    border-bottom: solid 5px rgb(83, 81, 81);
+    padding-right: 12px;
+    padding-left: 12px;
+    font-size: 1.7rem;
+    font-family:sans-serif ;
+    
+}
+.main-content {
+    width: 70%;
+    margin-left: 2rem;
+    font-size: 2rem;
+}
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.footer-container ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+   
+}
+.footer-container ul li a {
+    color:rgb(83, 81, 81);
+}
+.section-box {
+    display: flex;
+    margin-bottom: 2rem;
+}
+
+.box-title {
+    font-size: 2rem;
+    margin-bottom: .5rem;
+}
+.box-title p {
+    font-size: 1.5rem;
+}
+
+@media screen and (min-width:768px) {
+    
+}
+
+
+/*footer: make changes to anchors for nav and footer so they are different colors, correct font-size, footer needs to be centered
+
+colored text boxes on images need different correct font size, positioning
+
+space between work and contact me box
+
+set up links for contact me
+
+hover effects on images and maybe the nav and footer? Check the gif*/
+
+/* media queries */
