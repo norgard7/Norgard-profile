@@ -123,6 +123,7 @@ a {
     position: relative;
     margin-bottom: 2rem;
 }
+
 .image-box {
     position: relative;
 }
@@ -149,7 +150,6 @@ a {
     list-style-type: none;
     display: inline-block;
     margin-left: 25px;
-    border-bottom: solid 5px rgb(83, 81, 81);
     padding-right: 12px;
     padding-left: 12px;
     font-size: 1.7rem;
@@ -169,12 +169,17 @@ a {
 .footer-container ul {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     justify-content: space-evenly;
    
 }
+.break {
+    margin-right: -64px;
+    flex-basis: 0;
+}
 .footer-container ul li a {
     color:rgb(83, 81, 81);
+    border-bottom: solid 5px rgb(83, 81, 81);
 }
 .section-box {
     display: flex;
@@ -189,19 +194,57 @@ a {
     font-size: 1.5rem;
 }
 
-@media screen and (min-width:768px) {
+@media screen and (max-width:992px) {
+    .sml-image {
+        width: 100%;
+    }
+    .first-image {
+        margin-bottom: 2rem;
+    }
+    .footer-container ul {
+        flex-wrap: wrap;
+    }
+    .break {
+        flex-basis: 100%;
+        height: 2rem;
+    }
     
 }
 
+@media screen and (max-width:768px) {
 
-/*footer: make changes to anchors for nav and footer so they are different colors, correct font-size, footer needs to be centered
-
-colored text boxes on images need different correct font size, positioning
-
-space between work and contact me box
-
-set up links for contact me
-
-hover effects on images and maybe the nav and footer? Check the gif*/
-
-/* media queries */
+    h1 {
+       width: 100%;
+        top: 0%;
+        right: 0%;
+    }
+    header {
+        padding: 0;
+    }
+    header nav {
+        position: relative;
+        top: 0%;
+        left: 0%;
+    }
+    .section-header {
+        width: 100%;
+        border-right: none;
+        border-bottom: dotted 7px #B0CDB6;
+        padding-right: none;
+        text-align: center;
+    }
+    .section-box {
+        flex-direction: column;
+    }
+    #break {
+        height: 0;
+    }
+    .footer-container ul {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        text-align: center;
+        
+       
+    }
+}
